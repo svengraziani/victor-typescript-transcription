@@ -1,5 +1,5 @@
-#Transcription of VictorJs to TypeScript ^2.5
+# Transcription of VictorJs to TypeScript ^2.5
 Check out the website for [documentation](http://victorjs.org/).
 
-##License
+## License
 MIT
