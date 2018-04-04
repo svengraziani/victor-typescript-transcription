@@ -1,4 +1,5 @@
 /**
+import { rad2deg } from './Vector';
  *  Transcription of the VictorJs Class to TypeScript
  *  Project: http://victorjs.org
  *  Transcription: Sven Graziani
@@ -350,6 +351,15 @@ export class Vector {
   public lengthSq(): number{
       return this.x * this.x + this.y * this.y;
   }
+
+  public angleTo(v: Vector){
+    return Math.atan2(v.y - this.y, v.x - this.x);
+  }
+
+  public angleToDeg(v: Vector){
+    return rad2deg(this.angleTo(v));
+  }
+
 
   public isZero(): boolean{
       return this.x === 0 && this.y === 0;
